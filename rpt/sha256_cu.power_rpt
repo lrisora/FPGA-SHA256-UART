@@ -1,0 +1,261 @@
+Loading db file '/home/lrisora/synopsys/library/smic13_ss.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : sha256_cu_tld
+Version: O-2018.06-SP1
+Date   : Tue Jun 22 14:23:00 2021
+****************************************
+
+
+Library(s) Used:
+
+    smic13_ss (File: /home/lrisora/synopsys/library/smic13_ss.db)
+
+
+Operating Conditions: WORST   Library: smic13_ss
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+sha256_cu_tld          reference_area_1000000
+                                         smic13_ss
+sha256_cu              reference_area_1000000
+                                         smic13_ss
+uart_rx                reference_area_100000
+                                         smic13_ss
+uart_tx                reference_area_20000
+                                         smic13_ss
+sha256                 reference_area_100000
+                                         smic13_ss
+baud_generate_1        reference_area_20000
+                                         smic13_ss
+rx_shift_reg           reference_area_20000
+                                         smic13_ss
+tx_shift_reg           reference_area_20000
+                                         smic13_ss
+k_constants            reference_area_20000
+                                         smic13_ss
+calc_w                 reference_area_20000
+                                         smic13_ss
+hash_algorithm         reference_area_100000
+                                         smic13_ss
+choose_function        reference_area_20000
+                                         smic13_ss
+E1_function            reference_area_20000
+                                         smic13_ss
+majority_function      reference_area_20000
+                                         smic13_ss
+E0_function            reference_area_20000
+                                         smic13_ss
+mux_1_bit_31           reference_area_20000
+                                         smic13_ss
+ma_1_bit_31            reference_area_20000
+                                         smic13_ss
+baud_generate_0        reference_area_20000
+                                         smic13_ss
+mux_1_bit_0            reference_area_20000
+                                         smic13_ss
+mux_1_bit_1            reference_area_20000
+                                         smic13_ss
+mux_1_bit_2            reference_area_20000
+                                         smic13_ss
+mux_1_bit_3            reference_area_20000
+                                         smic13_ss
+mux_1_bit_4            reference_area_20000
+                                         smic13_ss
+mux_1_bit_5            reference_area_20000
+                                         smic13_ss
+mux_1_bit_6            reference_area_20000
+                                         smic13_ss
+mux_1_bit_7            reference_area_20000
+                                         smic13_ss
+mux_1_bit_8            reference_area_20000
+                                         smic13_ss
+mux_1_bit_9            reference_area_20000
+                                         smic13_ss
+mux_1_bit_10           reference_area_20000
+                                         smic13_ss
+mux_1_bit_11           reference_area_20000
+                                         smic13_ss
+mux_1_bit_12           reference_area_20000
+                                         smic13_ss
+mux_1_bit_13           reference_area_20000
+                                         smic13_ss
+mux_1_bit_14           reference_area_20000
+                                         smic13_ss
+mux_1_bit_15           reference_area_20000
+                                         smic13_ss
+mux_1_bit_16           reference_area_20000
+                                         smic13_ss
+mux_1_bit_17           reference_area_20000
+                                         smic13_ss
+mux_1_bit_18           reference_area_20000
+                                         smic13_ss
+mux_1_bit_19           reference_area_20000
+                                         smic13_ss
+mux_1_bit_20           reference_area_20000
+                                         smic13_ss
+mux_1_bit_21           reference_area_20000
+                                         smic13_ss
+mux_1_bit_22           reference_area_20000
+                                         smic13_ss
+mux_1_bit_23           reference_area_20000
+                                         smic13_ss
+mux_1_bit_24           reference_area_20000
+                                         smic13_ss
+mux_1_bit_25           reference_area_20000
+                                         smic13_ss
+mux_1_bit_26           reference_area_20000
+                                         smic13_ss
+mux_1_bit_27           reference_area_20000
+                                         smic13_ss
+mux_1_bit_28           reference_area_20000
+                                         smic13_ss
+mux_1_bit_29           reference_area_20000
+                                         smic13_ss
+mux_1_bit_30           reference_area_20000
+                                         smic13_ss
+ma_1_bit_0             reference_area_20000
+                                         smic13_ss
+ma_1_bit_1             reference_area_20000
+                                         smic13_ss
+ma_1_bit_2             reference_area_20000
+                                         smic13_ss
+ma_1_bit_3             reference_area_20000
+                                         smic13_ss
+ma_1_bit_4             reference_area_20000
+                                         smic13_ss
+ma_1_bit_5             reference_area_20000
+                                         smic13_ss
+ma_1_bit_6             reference_area_20000
+                                         smic13_ss
+ma_1_bit_7             reference_area_20000
+                                         smic13_ss
+ma_1_bit_8             reference_area_20000
+                                         smic13_ss
+ma_1_bit_9             reference_area_20000
+                                         smic13_ss
+ma_1_bit_10            reference_area_20000
+                                         smic13_ss
+ma_1_bit_11            reference_area_20000
+                                         smic13_ss
+ma_1_bit_12            reference_area_20000
+                                         smic13_ss
+ma_1_bit_13            reference_area_20000
+                                         smic13_ss
+ma_1_bit_14            reference_area_20000
+                                         smic13_ss
+ma_1_bit_15            reference_area_20000
+                                         smic13_ss
+ma_1_bit_16            reference_area_20000
+                                         smic13_ss
+ma_1_bit_17            reference_area_20000
+                                         smic13_ss
+ma_1_bit_18            reference_area_20000
+                                         smic13_ss
+ma_1_bit_19            reference_area_20000
+                                         smic13_ss
+ma_1_bit_20            reference_area_20000
+                                         smic13_ss
+ma_1_bit_21            reference_area_20000
+                                         smic13_ss
+ma_1_bit_22            reference_area_20000
+                                         smic13_ss
+ma_1_bit_23            reference_area_20000
+                                         smic13_ss
+ma_1_bit_24            reference_area_20000
+                                         smic13_ss
+ma_1_bit_25            reference_area_20000
+                                         smic13_ss
+ma_1_bit_26            reference_area_20000
+                                         smic13_ss
+ma_1_bit_27            reference_area_20000
+                                         smic13_ss
+ma_1_bit_28            reference_area_20000
+                                         smic13_ss
+ma_1_bit_29            reference_area_20000
+                                         smic13_ss
+ma_1_bit_30            reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_0      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_1      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_2      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_3      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_4      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_5      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_6      reference_area_20000
+                                         smic13_ss
+sha256_DW01_add_7      reference_area_20000
+                                         smic13_ss
+uart_rx_DW01_dec_0     reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_3
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_6
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_7
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_8
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_9
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_10
+                       reference_area_20000
+                                         smic13_ss
+hash_algorithm_DW01_add_11
+                       reference_area_20000
+                                         smic13_ss
+calc_w_DW01_add_3      reference_area_20000
+                                         smic13_ss
+calc_w_DW01_add_4      reference_area_20000
+                                         smic13_ss
+calc_w_DW01_add_5      reference_area_20000
+                                         smic13_ss
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   5.2766 mW   (99%)
+  Net Switching Power  =  51.8137 uW    (1%)
+                         ---------
+Total Dynamic Power    =   5.3284 mW  (100%)
+
+Cell Leakage Power     =  43.2101 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           5.2561        2.6644e-02        1.8705e+04            5.3014  (  98.69%)
+sequential     3.5037e-04            0.0000          234.5179        5.8489e-04  (   0.01%)
+combinational  2.0272e-02        2.5170e-02        2.4270e+04        6.9712e-02  (   1.30%)
+--------------------------------------------------------------------------------------------------
+Total              5.2767 mW     5.1814e-02 mW     4.3210e+04 nW         5.3717 mW
+1

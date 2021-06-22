@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : sha256_cu_tld
+Version: O-2018.06-SP1
+Date   : Tue Jun 22 14:22:58 2021
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   sha256_cu_tld                0.00       167066.69      -167066.69
+                                                                    (VIOLATED)
+
+
+1

@@ -1,0 +1,203 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sha256_cu_tld
+Version: O-2018.06-SP1
+Date   : Tue Jun 22 14:22:58 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST   Library: smic13_ss
+Wire Load Model Mode: segmented
+
+  Startpoint: cu/sha256/round_reg[4]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: cu/sha256/ha/Aout_reg[27]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baud_generate_0    reference_area_20000  smic13_ss
+  hash_algorithm     reference_area_100000 smic13_ss
+  baud_generate_1    reference_area_20000  smic13_ss
+  sha256             reference_area_100000 smic13_ss
+  uart_tx            reference_area_20000  smic13_ss
+  uart_rx            reference_area_100000 smic13_ss
+  sha256_cu_tld      reference_area_1000000
+                                           smic13_ss
+  sha256_cu          reference_area_1000000
+                                           smic13_ss
+  k_constants        reference_area_20000  smic13_ss
+  hash_algorithm_DW01_add_9
+                     reference_area_20000  smic13_ss
+  hash_algorithm_DW01_add_10
+                     reference_area_20000  smic13_ss
+  hash_algorithm_DW01_add_8
+                     reference_area_20000  smic13_ss
+  hash_algorithm_DW01_add_7
+                     reference_area_20000  smic13_ss
+  hash_algorithm_DW01_add_11
+                     reference_area_20000  smic13_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cu/sha256/round_reg[4]/CK (FFDRHQHD3X)                  0.00 #     0.00 r
+  cu/sha256/round_reg[4]/Q (FFDRHQHD3X)                   0.21       0.21 r
+  cu/sha256/U790/Z (BUFHD1X)                              0.19       0.40 r
+  cu/sha256/kc/Addr[4] (k_constants)                      0.00       0.40 r
+  cu/sha256/kc/U49/Z (INVHD1X)                            0.07       0.48 f
+  cu/sha256/kc/U316/Z (AND2HD1X)                          0.25       0.73 f
+  cu/sha256/kc/U77/Z (AND2HD1X)                           0.26       0.98 f
+  cu/sha256/kc/U104/Z (AND2HD1X)                          0.23       1.22 f
+  cu/sha256/kc/U144/Z (INVHDUX)                           0.20       1.42 r
+  cu/sha256/kc/U227/Z (INVHD1X)                           0.15       1.57 f
+  cu/sha256/kc/U396/Z (NOR4HDMX)                          0.26       1.84 r
+  cu/sha256/kc/U35/Z (NAND4HD2X)                          0.33       2.17 f
+  cu/sha256/kc/U13/Z (NOR2HD2X)                           0.08       2.25 r
+  cu/sha256/kc/U214/Z (NAND4HDMX)                         0.23       2.47 f
+  cu/sha256/kc/U397/Z (NOR3HD1X)                          0.19       2.67 r
+  cu/sha256/kc/U319/Z (NAND4HD2X)                         0.36       3.03 f
+  cu/sha256/kc/K[5] (k_constants)                         0.00       3.03 f
+  cu/sha256/ha/Kin[5] (hash_algorithm)                    0.00       3.03 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/B[5] (hash_algorithm_DW01_add_9)
+                                                          0.00       3.03 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U4/Z (INVHD2X)
+                                                          0.06       3.09 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U299/Z (NAND2HD2X)
+                                                          0.09       3.17 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U37/Z (INVHD1X)
+                                                          0.14       3.32 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U31/Z (NOR2HD1X)
+                                                          0.08       3.39 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U293/Z (OAI21HDMX)
+                                                          0.16       3.56 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U30/Z (NAND2HD1X)
+                                                          0.15       3.70 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U208/Z (INVCLKHD2X)
+                                                          0.07       3.77 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U10/Z (NAND2HD2X)
+                                                          0.10       3.87 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U278/Z (NAND2HD2X)
+                                                          0.10       3.97 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U277/Z (NAND2HD2X)
+                                                          0.09       4.06 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U274/Z (NAND2HD2X)
+                                                          0.10       4.16 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U273/Z (NAND2HD2X)
+                                                          0.09       4.25 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U271/Z (NAND2HD2X)
+                                                          0.07       4.32 r
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U50/Z (NAND2HD1X)
+                                                          0.08       4.40 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/U48/Z (XOR2HD1X)
+                                                          0.38       4.78 f
+  cu/sha256/ha/add_3_root_add_0_root_add_35/SUM[11] (hash_algorithm_DW01_add_9)
+                                                          0.00       4.78 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/B[11] (hash_algorithm_DW01_add_10)
+                                                          0.00       4.78 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U250/Z (INVHD1X)
+                                                          0.13       4.91 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U335/Z (NAND2HD2X)
+                                                          0.08       4.99 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U334/Z (INVCLKHD1X)
+                                                          0.12       5.11 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U330/Z (NOR2HD2X)
+                                                          0.06       5.17 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U328/Z (NAND2HD2X)
+                                                          0.13       5.30 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U317/Z (NAND2HD2X)
+                                                          0.08       5.38 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U315/Z (OAI22B2HD2X)
+                                                          0.16       5.55 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U314/Z (NOR2HD2X)
+                                                          0.08       5.62 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U157/Z (OR3HD2X)
+                                                          0.28       5.90 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U131/Z (NAND2HD2X)
+                                                          0.06       5.96 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U75/Z (NAND2HD1X)
+                                                          0.09       6.05 f
+  cu/sha256/ha/add_1_root_add_0_root_add_35/U74/Z (XOR2HD2X)
+                                                          0.31       6.36 r
+  cu/sha256/ha/add_1_root_add_0_root_add_35/SUM[17] (hash_algorithm_DW01_add_10)
+                                                          0.00       6.36 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/B[17] (hash_algorithm_DW01_add_8)
+                                                          0.00       6.36 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U268/Z (INVCLKHD1X)
+                                                          0.08       6.44 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U68/Z (NAND2HD1X)
+                                                          0.13       6.57 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U266/Z (INVCLKHD1X)
+                                                          0.15       6.72 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U50/Z (NOR2HDMX)
+                                                          0.15       6.87 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U151/Z (NAND2HDMX)
+                                                          0.10       6.98 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U225/Z (OAI21HD2X)
+                                                          0.32       7.30 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U224/Z (NAND2HD3X)
+                                                          0.09       7.38 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U223/Z (NAND2HD3X)
+                                                          0.11       7.49 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U258/Z (NAND2HD2X)
+                                                          0.07       7.56 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U257/Z (NAND2HD2X)
+                                                          0.10       7.65 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U207/Z (INVHDPX)
+                                                          0.05       7.70 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U254/Z (OAI21HDMX)
+                                                          0.15       7.85 r
+  cu/sha256/ha/add_0_root_add_0_root_add_35/U218/Z (XOR2HD2X)
+                                                          0.35       8.20 f
+  cu/sha256/ha/add_0_root_add_0_root_add_35/SUM[23] (hash_algorithm_DW01_add_8)
+                                                          0.00       8.20 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/B[23] (hash_algorithm_DW01_add_11)
+                                                          0.00       8.20 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U236/Z (INVCLKHD1X)
+                                                          0.09       8.29 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U40/Z (AND2CLKHD3X)
+                                                          0.18       8.48 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U234/Z (NOR2HD2X)
+                                                          0.05       8.53 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U232/Z (AOI21HD1X)
+                                                          0.20       8.73 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U230/Z (NAND2HD2X)
+                                                          0.12       8.85 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U4/Z (NAND2HD3X)
+                                                          0.10       8.96 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U75/Z (NAND2HD1X)
+                                                          0.13       9.08 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U126/Z (NAND2HD1X)
+                                                          0.14       9.22 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U57/Z (NAND2HD2X)
+                                                          0.09       9.31 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U32/Z (AOI21HDMX)
+                                                          0.19       9.49 r
+  cu/sha256/ha/add_0_root_add_0_root_add_38/U130/Z (XNOR2HD1X)
+                                                          0.29       9.79 f
+  cu/sha256/ha/add_0_root_add_0_root_add_38/SUM[27] (hash_algorithm_DW01_add_11)
+                                                          0.00       9.79 f
+  cu/sha256/ha/Aout_reg[27]/D (FFDQRHD1X)                 0.00       9.79 f
+  data arrival time                                                  9.79
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  cu/sha256/ha/Aout_reg[27]/CK (FFDQRHD1X)                0.00      10.00 r
+  library setup time                                     -0.21       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

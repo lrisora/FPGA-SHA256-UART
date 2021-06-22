@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : sha256_cu_tld
+Version: O-2018.06-SP1
+Date   : Tue Jun 22 14:22:58 2021
+****************************************
+
+Library(s) Used:
+
+    smic13_ss (File: /home/lrisora/synopsys/library/smic13_ss.db)
+
+Number of ports:                         5225
+Number of nets:                         18230
+Number of cells:                        12812
+Number of combinational cells:          10515
+Number of sequential cells:              2199
+Number of macros/black boxes:               0
+Number of buf/inv:                       3346
+Number of references:                       3
+
+Combinational area:              86346.990183
+Buf/Inv area:                    15698.860117
+Noncombinational area:           80719.698727
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                167066.688910
+Total area:                 undefined
+1
